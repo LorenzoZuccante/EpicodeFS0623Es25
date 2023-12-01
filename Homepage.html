@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea una copia di Netflix">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Homepage</title>
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="assets/media/netflix_logo.png" alt="Netflix Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse  navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>
+                </ul>
+                <ul id="positionUl" class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="EditProfile.html"><img id="avatar" src="assets/media/avatar.png" alt="avatar icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="EditProfile.html"><i class="bi bi-caret-down"></i></a>
+                      </li>
+                  </ul>
+                  
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="bg-dark text-light">
+        <div class="d-flex justify-content-between"> <div class="d-flex"><h1>Tv Shows</h1> <div class="form-group"><select class="form-select" id="exampleSelect">
+            <option value="gn">Genres</option>
+            <option value="act">Action</option>
+            <option value="hr">Horror</option>
+        </select></div></div> <div id="twoicon"><i class="bi bi-layout-text-window-reverse"></i><i id="spaziatura" class="bi bi-grid"></i></div></div>
+        <h2>Trending Now</h2>
+        <div id="carousel1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/media/media0.webp" class="imgCarousel" alt="sherlock">
+                <img  src="assets/media/media1.jpg" alt="american factory" class="imgCarousel">
+                <img src="assets/media/media2.webp" alt="" class="imgCarousel">
+                <img src="assets/media/media3.webp" alt="" class="imgCarousel">
+                <img src="assets/media/media4.jpg" alt="" class="imgCarousel">
+                <img src="assets/media/media5.webp" alt="" class="imgCarousel">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/media6.jpg" alt="the social dilemma" class="imgCarousel">
+                <img src="assets/media/media7.webp" alt="arog" class="imgCarousel">
+                <img src="assets/media/media8.webp" alt="yahshi" class="imgCarousel">
+                <img src="assets/media/media9.jpg" alt="connected" class="imgCarousel">
+                <img src="assets/media/media10.jpg" alt="spy" class="imgCarousel">
+                <img src="assets/media/media23.webp" alt="dream big" class="imgCarousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev prevPosition" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <h2>Watch It Again</h2>
+        <div id="carousel2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/media/media11.jpg" class="imgCarousel" alt="the college">
+                <img  src="assets/media/media12.jpg" alt="tribes" class="imgCarousel">
+                <img src="assets/media/media13.jpg" alt="narcos" class="imgCarousel">
+                <img src="assets/media/media14.webp" alt="breaking bad" class="imgCarousel">
+                <img src="assets/media/media15.jpg" alt="explained" class="imgCarousel">
+                <img src="assets/media/media16.webp" alt="rick e morty" class="imgCarousel">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/media17.jpg" alt="the white helmets" class="imgCarousel">
+                <img src="assets/media/media18.jpg" alt="spycraft" class="imgCarousel">
+                <img src="assets/media/media19.webp" alt="better call saul" class="imgCarousel">
+                <img src="assets/media/media20.jpg" alt="inside bill brain" class="imgCarousel">
+                <img src="assets/media/media21.webp" alt="vikings" class="imgCarousel">
+                <img src="assets/media/media3.webp" alt="genius of the modrn world" class="imgCarousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev prevPosition" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <h2>New Releases</h2>
+        <div id="carousel3" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/media/media22.webp" class="imgCarousel" alt="how i met ur mother">
+                <img  src="assets/media/media23.webp" alt="tribes" class="imgCarousel">
+                <img src="assets/media/media24.jpg" alt="dream big" class="imgCarousel">
+                <img src="assets/media/media25.webp" alt="our planet" class="imgCarousel">
+                <img src="assets/media/media26.webp" alt="modern family" class="imgCarousel">
+                <img src="assets/media/media27.jpg" alt="leyla and mecnun" class="imgCarousel">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/media28.jpg" alt="peaky blinders" class="imgCarousel">
+                <img src="assets/media/media29.jpg" alt="my octopus teacher" class="imgCarousel">
+                <img src="assets/media/media30.jpg" alt="magic for humans" class="imgCarousel">
+                <img src="assets/media/media31.webp" alt="the most unknown" class="imgCarousel">
+                <img src="assets/media/media32.jpg" alt="the last dance" class="imgCarousel">
+                <img src="assets/media/media5.webp" alt="the chine hustle" class="imgCarousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev prevPosition" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+        <footer class="bg-dark text-light">
+            <div class="container d-flex justify-content-center">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <ul>
+                    <li> <a href="#">Audio and Subtitles</a></li>
+                    <li><a href="#">Audio Description</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <ul>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="bg-dark" id="btn-footer">Service Code</button>
+                <p id="pFooter">&copy; 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+            </div>
+        </footer>
+            
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
